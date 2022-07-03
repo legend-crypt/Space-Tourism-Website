@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Roboto:wght@300;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+    background: url(/space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg);
+    color: aliceblue;
+   //margin: 0;
+   overflow-x: hidden;
+}
+
+img{
+    width: 1rem;
+    height: 1rem;
+}
+.mobile-nav-toggle{
+    display: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    max-width: 1300px;
+    margin-left: auto;
+}
+
+.nav{
+    display: flex;
+    margin-left: auto;
+    //margin-right: auto;
+   background: hsla(0,0%,100%,0.1);
+
+   padding: 1.7rem 1rem 1.7rem 3rem;
+   width: 70%;
+   a{
+       text-decoration: none;
+       font: {
+        weight: 500;
+        family: 'Mulish' ,sans-serif;
+        size: 1rem;
+    }
+    color:#fff;
+   }
+   a:link{
+    font: {
+        weight: 500;
+        family: 'Mulish' ,sans-serif;
+        size: 1rem;
+    }
+    color:#fff;
+   }
+   a:hover{
+       border-bottom: 1px solid #fff;
+       font: {
+        weight: 500;
+        family: 'Mulish' ,sans-serif;
+        size: 1rem;
+    }
+    color:#fff;
+       
+   }
+   a:active{
+    border-bottom: 1px solid #fff;
+    font: {
+        weight: 500;
+        family: 'Mulish' ,sans-serif;
+        size: 1rem;
+    }
+    color:#fff;
+   }
+}
+
+
+.main__nav{
+    display: flex;
+    background: #979797;
+    //opacity: 20%;
+    width: 51.875rem;
+    padding: 1rem;
+}
+.push__right + .push__right{
+ margin-left: 1.2rem;
+ 
+
+}
+.logo{
+    width: 2rem;
+    height: 2rem;
+    margin: 1.5rem auto 2rem 1rem;
+}
+span{
+    font-weight: 700;
+    margin-inline-end: 0.5rem;
+    z-index: 2;
+}
+.main__content{
+    position: absolute;
+    inset: 50% 20% 10% 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home__section{
+    width: 50%;
+    text-align: justify;
+    margin-right: auto;
+
+&-head{
+        font: {
+            weight: 600;
+            family: 'Mulish', sans-serif;
+            size: 1.5rem;
+
+        };
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+}
+&--title{
+    text-transform: uppercase;
+    margin: 1.5rem 0 0 0;
+    font: {
+        weight: 500;
+        family: 'Roboto', sans-serif;
+        size: 5rem;
+    };
+}
+&--text{
+    margin-top: 0;
+}
+}
+.circle{
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        color: black;
+        text-align: center;
+        font: {
+            family: 'Roboto', sans-serif;
+            weight: 400;
+        };
+    }
+
+}
+.circle:hover{
+    box-shadow: 0rem 0px 0px 5rem hsla(0,0%,100%,0.1);
+}
+
+@media only screen and (max-width: 768px){
+
+}
+
+
+@media only screen and (max-width:35rem){
+    .nav{
+        background: rgba(158, 158, 158, 0.137);
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        margin-top: 0;
+        padding: 10rem 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 2rem;
+        z-index: 1000;
+        transform: translateX(100%);
+    }
+    .mobile-nav-toggle{
+        position: absolute;
+        background:url(/space-tourism-website-main/starter-code/Home/images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        width: 2rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+        z-index: 9999;
+        border: 0;
+        display: block;
+    }
+    .main__content{
+display: block;
+}
+    .home__section{
+    width: 100%;
+    text-align: center;
+}
+    .circle{
+    width: 100%;
+    max-width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+ 
+}
+}
