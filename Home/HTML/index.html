@@ -4,21 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="/space-tourism-website-main/starter-code/Home/CSS/index_style.css">
+  <link rel="stylesheet" href="../CSS/index_style.css">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
   <header>
-    <div><img class="logo" src="/space-tourism-website-main/starter-code/Home/images/logo.svg" alt="Logo"></div>
-    <button class="mobile-nav-toggle"></button>
-     <nav class="nav">
-            <div class="push__right"><span aria-hidden="true">00</span><a href="#">Home</a></div>
-            <div class="push__right"><span aria-hidden="true">01</span><a href="#">Destination</a></div>
-            <div class="push__right"><a href="#"><span aria-hidden="true">02</span>Crew</a></div>
-            <div class="push__right"><span aria-hidden="true">03</span><a href="#">Technology</a></div>  
-         </div>
+    <div><img class="logo" src="../images/logo.svg" alt="Logo"></div>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+
+     <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+          <li class="active">
+            <a href="index.html">
+              <span aria-hidden="=true">00</span>Home
+            </a>
+          <li>
+            <a href="destination.html">
+              <span aria-hidden="true">01</span>Destination
+            </a>
+          <li>
+            <a href="crew.html">
+              <span aria-hidden="true">02</span>Crew
+            </a>
+          <li>
+            <a href="technology.html">
+              <span aria-hidden="true">03</span>technology
+            </a>
+        </ul>
       </nav>
+
   </header>
 
   <div class="main__content">
@@ -33,6 +48,6 @@
    <p> Explore</p>
   </div>  
 </div>
-<script src="/space-tourism-website-main/starter-code/Home/JS/nav.js"></script>
+<script src="../JS/nav.js"></script>
 </body>
 </html>
