@@ -176,7 +176,8 @@ span {
   .mobile-nav-toggle {
     position: absolute;
     display: block;
-    background: url("../images/icon-hamburger.svg");
+    background: transparent;
+    background-image: url("../images/icon-hamburger.svg");
     background-repeat: no-repeat;
     border: 0;
     width: 2rem;
@@ -184,6 +185,10 @@ span {
     top: 2rem;
     right: 2rem;
     z-index: 9999;
+  }
+
+  .mobile-nav-toggle[aria-expanded=false] {
+    background-image: url(../images/icon-close.svg);
   }
 }
 @media only screen and (max-width: 35rem) {
